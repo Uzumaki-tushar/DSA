@@ -1,5 +1,4 @@
 import java.util.*;
-
 class AlienDictionary {
     public String findOrder(String[] words) {
 
