@@ -37,12 +37,14 @@
     // return 0
 // }
 
-// add= fn(nums,target,ind-1)
+// add= fn(nums,target,ind-1,sum+nums[ind])
 
 // minus=fn(nums,target,ind-1,sum-nums[ind])
 
 // return pick + not_pick
 
 //  *----------------------------------------------------------------------------------------------------------------------------------*
+
+
 
 
