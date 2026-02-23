@@ -51,3 +51,6 @@ class Solution {
         return dp[ind][amount]=p+np;
     }
 }
+
+
+
