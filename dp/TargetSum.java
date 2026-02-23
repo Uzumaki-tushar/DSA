@@ -46,5 +46,31 @@
 //  *----------------------------------------------------------------------------------------------------------------------------------*
 
 
+class Solution {
+    public int findTargetSumWays(int[] nums, int target) {
+        int n=nums.length;
+        int sum=0;
+        for(var i:nums) sum+=i;
 
+        int[][] dp = new int[n][2*sum+1];
+        for(int i=0;i<n;i++) Arrays.fill(dp[i],-1);
+
+        return solve(nums,target,n-1,dp,sum,0);
+    }
+
+    public int solve(int[] nums,int target,int ind,int[][] dp,int sum,int total){
+        if(ind<0){
+            if(total==target) return 1;
+            return 0;
+        }
+
+        if(dp[ind][total+sum]!=-1) return dp[ind][total+sum];
+
+        int p=solve(nums,target,ind-1,dp,sum,total+nums[ind]);
+
+        int m=solve(nums,target,ind-1,dp,sum,total-nums[ind]);
+
+        return dp[ind][total+sum]=p+m;
+    }
+}
 
