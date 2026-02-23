@@ -37,9 +37,9 @@
     // return 0
 // }
 
-// not pick= fn(nums,target,ind-1)
+// add= fn(nums,target,ind-1)
 
-// pick=fn(nums,target-nums[ind],ind-1) only if target>=nums[ind]
+// minus=fn(nums,target,ind-1,sum-nums[ind])
 
 // return pick + not_pick
 
