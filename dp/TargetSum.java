@@ -29,11 +29,13 @@
 // approach
 // Knapsack problem either we can plus or minus two option for each index
 
-// fn(nums,target,ind,sum)
+// fn(nums,target,ind,0)
 
 // bc --> 
-//        if(ind<0 && target==0) return 1;
-//        if(ind<0) return 0;
+// if(ind==0) {
+    // if(target==sum) return 1
+    // return 0
+// }
 
 // not pick= fn(nums,target,ind-1)
 
